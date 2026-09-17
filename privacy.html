@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy &middot; GoatHam</title>
+<meta name="description" content="What GoatHam stores on your device, what it sends to the amateur radio programmes, and what it never collects.">
+<meta name="robots" content="index, follow">
+
+<link rel="icon" href="assets/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="wordmark" href="index.html">
+    <img src="assets/mark.png" alt="" width="34" height="34">
+    <span>GoatHam</span>
+  </a>
+  <nav><a href="index.html">Back to the app</a></nav>
+</header>
+
+<main class="doc">
+  <div class="wrap">
+
+    <h1 class="doc-title">Privacy<br>policy</h1>
+    <p class="doc-meta">GoatHam for Android, iOS and Linux &middot; package <code>com.jcalado.goatham</code><br>
+      Effective 17 September 2026. Applies to version 0&middot;1&middot;0 and later.</p>
+
+    <div class="doc-summary">
+      <p><b>The short version.</b> GoatHam has no account, no analytics, no
+      advertising and no tracking of any kind. Your log and your position stay
+      on your device. The only thing that leaves it is what you deliberately
+      send to an amateur radio programme: a spot you post, and your callsign
+      attached to the requests the app makes on your behalf.</p>
+    </div>
+
+    <h2>Who is responsible</h2>
+    <p>
+      GoatHam is made and published by Joel Calado, an individual developer.
+      For anything in this policy, write to
+      <a href="mailto:apps@jcalado.com">apps@jcalado.com</a>.
+    </p>
+
+    <h2>What stays on your device</h2>
+    <p>
+      All of it is held in the app's own private storage, which other apps
+      cannot read. None of it is uploaded anywhere, and there is no server
+      belonging to GoatHam for it to be uploaded to.
+    </p>
+    <ul class="plain doc-list">
+      <li><b>Your log.</b> Every contact you record: callsign, time, band, mode,
+        signal reports, references credited and your own notes.</li>
+      <li><b>Your settings.</b> Your callsign, your chosen position, starred
+        references, filters, alert rules and language.</li>
+      <li><b>Downloaded reference lists.</b> The parks, summits and towers you
+        fetch for offline use, and cached responses from the programme feeds.</li>
+      <li><b>Your position.</b> See the separate section below.</li>
+    </ul>
+    <p>
+      Uninstalling the app deletes all of it. There is no copy elsewhere, so
+      export a backup first if you want to keep your log.
+    </p>
+
+    <h2>Your position never leaves the device</h2>
+    <p>
+      GoatHam asks for location permission so it can sort spots by distance,
+      show you on the map, and tell you whether you are standing inside a
+      reference's boundary. That is the whole of it.
+    </p>
+    <p>
+      Your coordinates are used on the device and written only to the device's
+      own database. They are never put into a network request, never sent to
+      the amateur radio programmes, never sent to the map tile server, and
+      never sent to the developer. You can decline the permission and still use
+      the app; you can also set your position by pinning a point on the map or
+      typing a grid square, which needs no permission at all.
+    </p>
+
+    <h2>What does leave your device</h2>
+
+    <h3>Requests to the amateur radio programmes</h3>
+    <p>
+      To show you spots and reference details, the app fetches data from the
+      programmes themselves:
+    </p>
+    <ul class="plain doc-list">
+      <li>POTA, at <code>api.pota.app</code> and <code>pota.app</code></li>
+      <li>SOTA, at <code>api-db2.sota.org.uk</code>, <code>sso.sota.org.uk</code> and <code>storage.sota.org.uk</code></li>
+      <li>WWFF, at <code>wwff.co</code> and <code>spots.wwff.co</code></li>
+      <li>TOTA, at <code>wwtota.com</code> and <code>rozhledny.eu</code></li>
+    </ul>
+    <p>
+      These requests carry a <code>User-Agent</code> header naming the app, its
+      version, a contact address, and <b>your callsign once you have set one</b>,
+      in the form <code>goatham/0.1.0 (mailto:apps@jcalado.com; op=YOURCALL)</code>.
+      This is deliberate and it is the convention these services ask for: it
+      lets the operator of a free, volunteer-run service attribute traffic to a
+      real licensee instead of an anonymous client. Your amateur callsign is
+      already a matter of public record with your national licensing authority.
+      If you have not entered a callsign, the app sends <code>op=anon</code>.
+    </p>
+
+    <h3>Spots you post</h3>
+    <p>
+      When you self-spot, the app sends to that programme exactly what a spot
+      consists of: your callsign, the reference you are activating, the
+      frequency, the mode, and any comment you typed. Nothing else is attached.
+      Your position is not included even when the app knows it. A spot is a
+      public broadcast by design; that is the point of posting one.
+    </p>
+
+    <h3>Map tiles</h3>
+    <p>
+      Map tiles come from the OpenStreetMap Foundation at
+      <code>tile.openstreetmap.org</code>. Tile requests reach their servers with
+      your IP address, as any web request does, and are subject to the
+      <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OSMF privacy policy</a>.
+      These requests <b>deliberately omit your callsign</b>: their usage policy
+      wants one stable identity per application, so every GoatHam user sends the
+      identical string.
+    </p>
+
+    <h3>Signing in to SOTA</h3>
+    <p>
+      SOTA is the one programme that needs an account before it will accept a
+      spot. If you ever sign in, that happens in your system browser against
+      SOTA's own sign-in service, and GoatHam never sees your password. The
+      resulting tokens are kept in your device's keystore (Keychain on iOS, the
+      Android keystore, libsecret on Linux). No part of this is offered in the
+      current release.
+    </p>
+
+    <h3>Files you choose to share</h3>
+    <p>
+      Exporting or backing up your log hands an ADIF file to your operating
+      system's own share sheet. Where it goes from there is your choice, and
+      the app is not involved once you have picked a destination.
+    </p>
+
+    <h2>What the app does not do</h2>
+    <ul class="plain doc-list">
+      <li>No analytics, telemetry or usage measurement of any kind.</li>
+      <li>No crash or diagnostic reporting to the developer.</li>
+      <li>No advertising, no ad identifiers, no advertising networks.</li>
+      <li>No third party tracking or profiling SDKs. The app bundles none, and
+        the full list of its libraries is public in the source.</li>
+      <li>No account, no sign-up, no email address, no contacts, no photos, no
+        microphone, no camera.</li>
+      <li>No selling or sharing of personal information. There is nothing
+        collected to sell.</li>
+    </ul>
+
+    <h2>Permissions, and why each one exists</h2>
+    <ul class="plain doc-list">
+      <li><b>Internet.</b> Fetching spots, reference data and map tiles, and
+        posting spots you choose to post.</li>
+      <li><b>Location, fine and coarse.</b> Distance to references, your marker
+        on the map, and the boundary check. Optional, and never transmitted.</li>
+      <li><b>Notifications.</b> Alerting you when a spot matches a rule you
+        wrote. Notifications are generated on the device. There is no push
+        service and no server sending them.</li>
+    </ul>
+
+    <h2>Children</h2>
+    <p>
+      GoatHam is a tool for licensed amateur radio operators and is not directed
+      at children. It collects nothing from anyone, children included.
+    </p>
+
+    <h2>Legal basis and your rights</h2>
+    <p>
+      For operators in the European Economic Area and the United Kingdom: the
+      app stores your data on your own device under your own control, and the
+      only transmission of personal data is the callsign you enter and the spots
+      you choose to post, which is processed on the basis of your consent given
+      by entering it and by pressing the button. You can withdraw it by clearing
+      the callsign field or by not posting.
+    </p>
+    <p>
+      Because nothing is collected centrally, there is no account to access,
+      correct, export or delete. Your right to erasure is satisfied by deleting
+      the app's data or uninstalling it. Spots already posted are held by the
+      programme you posted them to, and requests about those go to that
+      programme.
+    </p>
+
+    <h2>Changes</h2>
+    <p>
+      If this policy changes, the effective date above changes with it and the
+      revised text replaces this page. Material changes will be noted in the
+      release notes of the version that introduces them.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      <a href="mailto:apps@jcalado.com">apps@jcalado.com</a>
+    </p>
+
+  </div>
+</main>
+
+<svg class="ridge-rule" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0 90 L150 38 L250 62 L390 12 L520 58 L640 30 L780 68 L900 26 L1040 60 L1200 20 L1200 90 Z" fill="currentColor"/>
+</svg>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="assets/mark.png" alt="" width="30" height="30">
+      <span>GoatHam</span>
+    </div>
+    <p class="foot-legal">
+      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+      POTA, SOTA, WWFF and TOTA are the marks of their own programmes, and this
+      app is not affiliated with any of them.
+    </p>
+    <nav class="foot-links">
+      <a href="index.html">Home</a>
+      <a href="https://github.com/jcalado/goatham-site/releases">Releases</a>
+    </nav>
+  </div>
+</footer>
+</body>
+</html>

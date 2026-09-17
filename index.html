@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GoatHam</title>
+<meta name="description" content="A field companion for POTA, SOTA, WWFF and Towers on the Air. Live spots when you are hunting, and a log, a boundary and a UTC clock when you are the one on the hill.">
+
+<meta property="og:title" content="GoatHam">
+<meta property="og:description" content="Parks, summits and towers. One log. A field companion for POTA, SOTA, WWFF and Towers on the Air.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="topbar">
+  <a class="wordmark" href="#top">
+    <img src="assets/mark.png" alt="" width="34" height="34">
+    <span>GoatHam</span>
+  </a>
+  <nav>
+    <a href="#programmes">Programmes</a>
+    <a href="#hunting">What it does</a>
+    <a href="#get">Get it</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ─────────── hero ─────────── -->
+  <section class="hero">
+    <div class="hero-type">
+      <p class="kicker reveal">Parks &middot; Summits &middot; Flora &amp; Fauna &middot; Towers</p>
+      <h1 class="reveal" style="--d:60ms">Work<br>the outdoors</h1>
+      <p class="lede reveal" style="--d:120ms">
+        Live spots when you are hunting. A log, a park boundary and a UTC clock
+        when you are the one being hunted.
+      </p>
+      <div class="actions reveal" style="--d:180ms">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.jcalado.goatham">Get it on Google Play</a>
+        <a class="btn btn-ghost" href="https://github.com/jcalado/goatham-site/releases">Download the APK</a>
+      </div>
+      <p class="fineprint reveal" style="--d:220ms">Android 7&middot;0 and up. Free, and it works without an account.</p>
+    </div>
+
+    <div class="hero-art reveal" style="--d:100ms">
+      <img src="assets/ridge.png" alt="An ibex standing on a crag above a pine forest, a fire lookout tower on the ridge behind it, and a low orange sun." width="2200" height="1375">
+    </div>
+  </section>
+
+  <!-- ─────────── programmes ─────────── -->
+  <section class="programmes" id="programmes">
+    <div class="wrap">
+      <h2 class="section-head">Four programmes,<br>one feed</h2>
+      <p class="section-lede">
+        The interface never asks which one you are chasing. A park, a summit and
+        a tower sit in the same list, sorted the same way, logged the same way.
+      </p>
+      <ul class="prog-list">
+        <li><span class="dot" style="--c:#4F9A52"></span><b>POTA</b><span class="prog-full">Parks on the Air</span></li>
+        <li><span class="dot" style="--c:#3299E1"></span><b>SOTA</b><span class="prog-full">Summits on the Air</span></li>
+        <li><span class="dot" style="--c:#8CE16C"></span><b>WWFF</b><span class="prog-full">World Wide Flora &amp; Fauna</span></li>
+        <li><span class="dot" style="--c:#C77B3C"></span><b>TOTA</b><span class="prog-full">Towers on the Air</span></li>
+      </ul>
+      <p class="prog-note">
+        One contact can credit more than one of them. A summit inside a park is
+        typed once and counted twice.
+      </p>
+    </div>
+  </section>
+
+  <!-- ─────────── act 1 ─────────── -->
+  <section class="act" id="hunting">
+    <div class="act-art">
+      <div class="frame"><img src="assets/shot-spots.jpg" alt="The spot list, showing activators with their park reference, frequency, mode and distance." width="660" height="1481" loading="lazy"></div>
+    </div>
+    <div class="act-copy">
+      <p class="act-no">01</p>
+      <h2>From the sofa</h2>
+      <p>
+        Every spot from all four programmes, in the order you actually want them.
+        Newest first, or nearest to you, or up the band by frequency, or by which
+        activators are still short of a valid activation and need the contact most.
+      </p>
+      <ul class="plain">
+        <li>References you have worked are ticked as you scroll.</li>
+        <li>Standing alert rules say what to notify you about, and what to ignore.</li>
+        <li>Silence everything for an hour, eight hours, until tomorrow, or for good.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────── act 2 ─────────── -->
+  <section class="act act-flip">
+    <div class="act-art">
+      <div class="frame"><img src="assets/shot-field.jpg" alt="An activation in progress: eight contacts of the ten POTA needs, time on air, the UTC clock, and a card saying the operator is 18.5 km outside the park boundary." width="660" height="1481" loading="lazy"></div>
+    </div>
+    <div class="act-copy">
+      <p class="act-no">02</p>
+      <h2>On the hill</h2>
+      <p>
+        The dashboard counts what the programmes count. Contacts made, how many
+        are left, time on air, rate, and a UTC clock that warns you before the
+        day rolls over underneath your activation.
+      </p>
+      <ul class="plain">
+        <li>Self-spot to POTA, WWFF and Towers without leaving the app.</li>
+        <li>The entry form tells you when you have worked an operator before, under any portable form of their call.</li>
+        <li>Export the activation as ADIF, one file per reference per UTC day.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ─────────── boundary ─────────── -->
+  <section class="boundary">
+    <div class="wrap boundary-inner">
+      <div class="boundary-copy">
+        <h2 class="section-head light">A park is an area,<br>not a pin</h2>
+        <p>
+          The programmes publish one coordinate per reference and it is only a
+          label anchor. For a long park it can sit sixty kilometres from where
+          you parked the car.
+        </p>
+        <p>
+          Where the real shape is on file, GoatHam draws it and answers the
+          question you actually have: are you inside it, outside it, or close
+          enough to the edge that your GPS cannot say. Contacts only count from
+          inside.
+        </p>
+        <p class="aside">
+          Three answers, never two. A reference with no shape on file is never
+          drawn as though you were outside it.
+        </p>
+      </div>
+      <div class="boundary-art">
+        <div class="frame frame-light"><img src="assets/shot-map.jpg" alt="The map around Sintra and Cascais with real park boundaries outlined, clustered reference markers, and the operator's position." width="660" height="1481" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── act 3, the log ─────────── -->
+  <section class="log">
+    <div class="wrap">
+      <p class="act-no">03</p>
+      <h2 class="section-head">Your log stays yours</h2>
+      <div class="log-grid">
+        <p>
+          It lives on your phone and leaves it only when you export it. Back the
+          whole thing up as a single ADIF file and restore it by importing that
+          file again.
+        </p>
+        <p>
+          Import from any other logger. A contact already in the log is skipped,
+          so importing the same file twice adds nothing at all.
+        </p>
+        <p>
+          Activations are worked out from the contacts themselves rather than
+          stored, so editing, deleting or importing can never leave your
+          activation list disagreeing with your log.
+        </p>
+        <p>
+          Swipe a contact away and undo it. Undo the last contact of a run and
+          the callsign goes back in the field, ready to be retyped.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─────────── get it ─────────── -->
+  <section class="get" id="get">
+    <div class="wrap get-inner">
+      <h2 class="section-head">Take it outside</h2>
+      <p class="get-lede">
+        English and European Portuguese. Reference lists download for the valley
+        with no signal.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.jcalado.goatham">Get it on Google Play</a>
+        <a class="btn btn-ghost" href="https://github.com/jcalado/goatham-site/releases">Download the APK</a>
+      </div>
+      <p class="fineprint">Version 0&middot;1&middot;0. For licensed amateur radio operators.</p>
+    </div>
+  </section>
+
+  <!-- the range rises out of the page and becomes the footer -->
+  <svg class="ridge-rule" viewBox="0 0 1200 90" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 90 L150 38 L250 62 L390 12 L520 58 L640 30 L780 68 L900 26 L1040 60 L1200 20 L1200 90 Z" fill="currentColor"/>
+  </svg>
+</main>
+
+<footer>
+  <div class="wrap foot-inner">
+    <div class="foot-brand">
+      <img src="assets/mark.png" alt="" width="30" height="30">
+      <span>GoatHam</span>
+    </div>
+    <p class="foot-legal">
+      Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.
+      POTA, SOTA, WWFF and TOTA are the marks of their own programmes, and this
+      app is not affiliated with any of them.
+    </p>
+    <nav class="foot-links">
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/jcalado/goatham-site/releases">Releases</a>
+      <a href="https://play.google.com/store/apps/details?id=com.jcalado.goatham">Google Play</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function () {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.reveal').forEach(function (n) { n.classList.add('in'); });
+    return;
+  }
+  document.querySelectorAll('.hero .reveal').forEach(function (n) { n.classList.add('in'); });
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { rootMargin: '0px 0px -12% 0px' });
+  document.querySelectorAll('section:not(.hero) > *, .act-copy, .act-art, .boundary-copy, .boundary-art')
+    .forEach(function (n) { n.classList.add('reveal'); io.observe(n); });
+})();
+</script>
+</body>
+</html>
